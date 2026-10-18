@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Hotel AMAANA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- CONTAINER waxyabaha si nadiif ah uhagaajiya(CENTER & SPACING)  -->
+        <div class="container">
+            <div class="logo">HOTEL AMAANA</div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="admin.html" class="nav-link active">Admin Panel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Admin Panel -->
+     <!-- Qeypta ugu weyn ee adminka -->
+    <section class="admin-section">
+        <div class="container">
+            <h1 class="admin-title">Admin Panel</h1>
+            <p class="admin-subtitle">Manage Bookings and Orders</p>
+
+            <!-- Stats Cards -->
+            <!-- GRID Wxu soo koobayaa kaararka tirakoobka -->
+            <div class="stats-grid">
+                <!-- Hal kaar tirakoob keliya -->
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-info">
+                        <h3 id="total-bookings">0</h3>
+                        <p>Total Bookings</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🍽️</div>
+                    <div class="stat-info">
+                        <h3 id="total-orders">0</h3>
+                        <p>Total Orders</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⏳</div>
+                    <div class="stat-info">
+                        <h3 id="pending-bookings">0</h3>
+                        <p>Pending Bookings</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-info">
+                        <h3 id="pending-orders">0</h3>
+                        <p>Pending Orders</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+             <!-- Badhamo badalaya qeybta la arko -->
+            <div class="admin-tabs">
+                <!-- JS AYAA ISTICMAALAYA SI UU UFURO TABKA SAXDA AH -->
+                 <!-- BOOKINGS TAB -->
+                <button class="tab-btn active" data-tab="bookings">Bookings</button>
+                <!-- ORDER TAB -->
+                <button class="tab-btn" data-tab="orders">Orders</button>
+            </div>
+
+            <!-- Bookings Tab -->
+             <!-- ACTIVE tan marka la joogo muuqato -->
+            <div id="bookings-tab" class="tab-content active">
+                <div class="table-header">
+                    <h2>All Bookings</h2>
+                    <!-- CLEAR BUTTON=Js function ayaa clear sameynaya -->
+                    <button class="btn btn-secondary btn-sm" onclick="clearBookings()">Clear All</button>
+                </div>
+                <div class="table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Room Type</th>
+                                <th>Check-in</th>
+                                <th>Check-out</th>
+                                <th>Guests</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <!-- JS ayaa ku dari doona Booking cusub -->
+                        <tbody id="bookings-table-body">
+                            <tr>
+                                <!-- Hadii uusan jirin wax booking ah yaa fariintan soo muuqaneyso -->
+                                <td colspan="11" class="empty-state">No bookings found</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Orders Tab -->
+            <div id="orders-tab" class="tab-content">
+                <div class="table-header">
+                    <h2>All Orders</h2>
+                    <!-- TIRTIRIDA DHMN ODERSKA -->
+                    <button class="btn btn-secondary btn-sm" onclick="clearOrders()">Clear All</button>
+                </div>
+                <div class="table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Preferred Time</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orders-table-body">
+                            <tr>
+                                <td colspan="10" class="empty-state">No orders found</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+

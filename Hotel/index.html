@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel AMAANA - Comfort, Trust & Luxury</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">HOTEL AMAANA</div>
+            <!-- NAVIGATION -->
+            <nav class="nav">
+                <!-- NAV lists -->
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                    <li><a href="#booking" class="nav-link">Booking</a></li>
+                    <li><a href="#restaurant" class="nav-link">Restaurant</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <!-- hamburger menu(mobile) -->
+                <div class="mobile-menu-toggle">
+                    <!-- Seddaxda xariiq ee menuga mobile -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: url(Hero\ image.jpeg);">
+        <!-- OVERLADY si text muuqdo -->
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to HOTEL AMAANA</h1>
+            <p class="hero-subtitle">Comfort, Trust & Luxury</p>
+            <!-- BOOK BUTTON -->
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+     <!-- Qeyb sharxada hotelka -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About HOTEL AMAANA</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Kusoo dhawoow AMAANA HOTEL, wxa naga go'an inaan kusiino waayo-aragnimo amaan ah, raaxo leh, isla
+                    markana
+                    ka sareysa filashadaada.
+                    AMAANA HOTEL wxuu uheelanyhy qancinta maaamiishiisa.<br>
+                    AAD HELI KARTO 24SAAC
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2 class="section-title">Qeybta QOlalka</h2>
+            <!-- Room grid waa dhmn qolalka -->
+            <div class="rooms-grid">
+                <!-- Room card waa hal qol -->
+                <div class="room-card">
+                    <div class="room-image"
+                    style="background-image: url(Singleroom.jpeg);">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">Single Room</h3>
+                        <p class="room-description">
+                            Sariir Normal ah<br>
+                            WIFI bilaash ah <br>
+                            TV<br>
+                            AC<br>
+                        </p>
+                        <div class="room-price">$50<span>/night</span></div>
+                        <a href="#booking" class="btn btn-secondary">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image"
+                    style="background-image: url(Double.jpeg);">
+                        
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">Double Room</h3>
+                        <p class="room-description">
+                            2 Sariir<br>
+                            WIFI bilaash ah<br>
+                            TV<br>
+                            AC<br>
+                            Quraac bilaash ah<br>
+                        </p>
+                        <div class="room-price">$125<span>/night</span></div>
+                        <a href="#booking" class="btn btn-secondary">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image"
+                    style="background-image: url(VIP.jpeg);">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">VIP Room</h3>
+                        <p class="room-description">
+                            Sariir VIP ah<br>
+                            WIFI xawaare sare leh<br>
+                            Smart TV<br>
+                            AC<br>
+                            Fadhi yaro modern ah<br>
+                            Adeegyo gaar ah<br>
+                        </p>
+                        <div class="room-price">$150<span>/night</span></div>
+                        <a href="#booking" class="btn btn-secondary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Sameyso Booking</h2>
+            <form id="booking-form" class="booking-form">
+                <!-- FORM-ROW wxaa loo isticmala in dhowr form group hal saf leyskugu keeno -->
+                <div class="form-row">
+                    <!-- FORM-GROUP wxaa loo isticmala wxaa loo isticmala in hal label io inputkiisa
+                     la iskugu geeyo-->
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type">Room Type</label>
+                        <select id="room-type" name="room-type" required>
+                            <option value="">Select Room Type</option>
+                            <option value="Single Room">Single Room</option>
+                            <option value="Double Room">Double Room</option>
+                            <option value="VIP Room">VIP Room</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin">Check-in Date</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out Date</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section id="restaurant" class="restaurant">
+        <div class="container">
+            <h2 class="section-title">Qeybta Maqaayada</h2>
+            <p class="section-subtitle">Macmiil Kusoo dhawoow qeybta maqaayada waxad naga heleysa cunto ku raaligelisa
+            </p>
+            <div class="restaurant-grid">
+                <div class="food-card">
+                    <div class="food-image"
+                    style="background-image: url(Canjero.jpeg);">
+                    </div>
+                    <div class="food-content">
+                        <h3 class="food-name">Quraac</h3>
+                        <p class="food-description">
+                            Quraac wxaa diyaar ah canjeelo io suqaar.
+                        </p>
+                        <div class="food-price">$15</div>
+                        <button class="btn btn-secondary btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image"
+                    style="background-image: url(Bariis.jpeg);">
+                    </div>
+                    <div class="food-content">
+                        <h3 class="food-name">Qado VIP</h3>
+                        <p class="food-description">
+                            Bariis io dooro io cabitaan.
+                        </p>
+                        <div class="food-price">$20</div>
+                        <button class="btn btn-secondary btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image"
+                    style="background-image: url(Baasto.jpeg);">
+                    </div>
+                    <div class="food-content">
+                        <h3 class="food-name">Casho</h3>
+                        <p class="food-description">
+                            Baasto saldaato io cabitaan.
+                        </p>
+                        <div class="food-price">$12</div>
+                        <button class="btn btn-secondary btn-order">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Sameyso Order</h2>
+            <form id="order-form" class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="order-name">Full Name</label>
+                        <input type="text" id="order-name" name="order-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-phone">Phone Number</label>
+                        <input type="tel" id="order-phone" name="order-phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="order-email">Email</label>
+                        <input type="email" id="order-email" name="order-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-item">Select Item</label>
+                        <select id="order-item" name="order-item" required>
+                            <option value="">Select Food Item</option>
+                            <option value="Quraac $15">Quraac - $15</option>
+                            <option value="Qado VIP $20">Qado VIP - $20</option>
+                            <option value="Casho $12">Casho - $12</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="order-quantity">Quantity</label>
+                        <input type="number" id="order-quantity" name="order-quantity" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-time">Preferred Time</label>
+                        <input type="time" id="order-time" name="order-time" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Confirm Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>612440275</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>info@hotelamana</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🛅</div>
+                    <h3>Location</h3>
+                    <p>Elasha biyaha, kaso horjeedka Hosbital Zamzam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Hotel AMAANA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+Nuura🤍
+</html>
